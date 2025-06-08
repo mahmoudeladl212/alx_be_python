@@ -1,16 +1,16 @@
-def perform_operation(num1: float, num2: float, operation: str) -> float | str:
+def perform_operation(num1, num2, operation):
     """
     Perform basic arithmetic operations on two numbers.
     
     Args:
-        num1: First operand
-        num2: Second operand
-        operation: One of 'add', 'subtract', 'multiply', or 'divide'
+        num1: First number (float)
+        num2: Second number (float)
+        operation: Type of operation (add, subtract, multiply, divide)
         
     Returns:
-        Result of the arithmetic operation as float, or error message for division by zero
+        Result of the operation or error message
     """
-    operation = operation.lower()  # Ensure case-insensitive comparison
+    operation = operation.lower()
     
     if operation == 'add':
         return num1 + num2
